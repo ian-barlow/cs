@@ -1,8 +1,6 @@
-# csh
-Cloud Shell helper
+# cs
+Cloud Subscription
 
-Type or file a short subscription name and populate useful environment variables, preview some commands and generally just help out. Going to add some more text here now.
+Run without arguments to display current Azure context, run with a single argument to search for and switch to another subscription.
 
-Even more text added on a completly new line.
-
-Updated the readme file
+Caches expensive Azure calls into ~\.azure\script_cs.json
