@@ -76,6 +76,8 @@ Else {
             $env:SUB_ID = $subsMatched[0].Id
             $env:SUB_SHORT = $subsMatched[0].Shortname
             Set-AzContext -SubscriptionId $subsMatched[0].Id | Out-Null
+            az account set -s $subsMatched[0].Id
+            
             Write-host "Found matching subscription, setting context, setting environment variables:"
             Write-Host
             Write-Host "  (env:SUB_NAME)  Name      :", $subsMatched[0].Name
